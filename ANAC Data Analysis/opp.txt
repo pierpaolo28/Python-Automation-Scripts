@@ -1,0 +1,5 @@
+C:\Users\hp\Desktop\University of Southampton\MSc AI\Intelligent Agents\negotiation-agent\out\production\negotiation-agent\agentgg\AgentGG.class
+C:\Users\hp\Desktop\University of Southampton\MSc AI\Intelligent Agents\negotiation-agent\out\production\negotiation-agent\agentgp\AgentGP.class
+agents.anac.y2016.atlas3.Atlas32016
+C:\Users\hp\Desktop\University of Southampton\MSc AI\Intelligent Agents\negotiation-agent\out\production\negotiation-agent\kakesoba\KakeSoba.class
+C:\Users\hp\Desktop\University of Southampton\MSc AI\Intelligent Agents\negotiation-agent\out\production\negotiation-agent\fsega2019\agent\FSEGA2019.class

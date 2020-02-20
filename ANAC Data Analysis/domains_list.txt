@@ -1,0 +1,2 @@
+file:etc/templates/partydomain/party1_utility_u10.xml
+file:etc/templates/partydomain/party2_utility_u10.xml
