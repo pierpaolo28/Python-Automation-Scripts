@@ -4,19 +4,13 @@ import re
 import os
 import argparse
 
-'''
-Download images from Medium (in pier=True version)
-For figure captions assumes that all end with a full stop (.)
-Embeds do not work and need to be added manually
-'''
-
-# In this pier version the contacts section is automatically deleted and the featured image is moved at the top before the title and subtitle
+# In this version the contacts section is automatically deleted and the featured image is moved at the top before the title and subtitle
 full_name, user_name = "Pier Paolo Ippolito", "pierpaoloippolito28"
 
 parser = argparse.ArgumentParser(
-    prog='medium_to_md.py', description="Converting automatically Medium Posts to Markdown")
+    prog='tds_to_md.py', description="Converting automatically Towards Data Science (TDS) Posts to Markdown")
 parser.add_argument('-a', metavar='Article Link',
-                    help="Link to the Medium article you want to convert", required=True, type=str)
+                    help="Link to the TDS article you want to convert", required=True, type=str)
 args = parser.parse_args()
 
 r = requests.get(args.a)
@@ -71,8 +65,8 @@ no_contacts = no_contacts.replace(no_contacts[start:end+1], "")
 no_contacts = intro_image + "\n" + no_contacts
 
 # Creating a folder to store the md articles and saving them
-if not os.path.exists("pier_posts/"):
-    os.makedirs("pier_posts/")
+if not os.path.exists("_posts/"):
+    os.makedirs("_posts/")
 
-with open('pier_posts/'+filename, 'w', encoding='utf-8') as f:
+with open('_posts/'+filename, 'w', encoding='utf-8') as f:
     print(no_contacts, file=f)
