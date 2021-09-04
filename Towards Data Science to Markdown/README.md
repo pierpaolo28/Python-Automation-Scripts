@@ -35,3 +35,11 @@ pip install -r requirements.txt
 ```
 
 In order to avoid possible conflicts between different libraries versions, it is suggested to create first a virtual environment where to install the packages listed in the **requirements.txt** file. 
+
+Additionally 2 other programs are available in order to automatically download locally all the images present in an article published on Towards Data Science. Using **single_article_imgs_download.py** it can be possible to download all the images in a single article. The output will be stored in a folder called **_images**. An example command line usage of this program is shown below (the only argument required is a link to the desired article):
+
+```
+python single_article_imgs_download.py -a https://towardsdatascience.com/deploying-machine-learning-projects-using-tkinter-7f0ddc7f1bd1
+```
+
+Finally, **multiple_articles_imgs_download.py** makes possible to perform this same operation at once for any number of articles you want to download the images from (this version doesn't have any command line interface considering that different changes might be needed if you want to select just a subset of articles or get a whole collection).
